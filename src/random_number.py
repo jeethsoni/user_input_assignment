@@ -13,7 +13,7 @@ def main():
         # stores random number in the variable as per users choice
         rand_num = random.randrange(start_number, end_number)
 
-        # prints the random number 
+        # prints the random number
         print(f"Your lucky random number is: {rand_num}")
     else:
         print("sorry, you didn't enter an integer")
