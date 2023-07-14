@@ -2,8 +2,7 @@ import re
 
 
 def main():
-
-    numbers = input("Enter 5 numbers of your choice (seperate numbers with a comma(,)): ").split(",")
+    numbers = input("Enter 5 numbers of your choice: with(,) ").split(",")
     if (len(numbers) < 5 or len(numbers) > 5):
         print("sorry, you entered more or less than 5 numbers")
     else:

@@ -6,7 +6,7 @@ def main():
     # asks user for a range for random number
     start_range = input("Enter a starting range: ")
     end_range = input("Enter an ending range: ")
-    
+
     if ((start_range.isdigit() is True) and (end_range.isdigit() is True)):
         start_number = int(start_range)
         end_number = int(end_range)
