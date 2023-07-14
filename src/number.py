@@ -21,7 +21,7 @@ def main():
             print(f"\nThe lowest number is {min_number}")
 
             # checks for the maximum number and prints it
-            max_number = max(num) 
+            max_number = max(num)
             print(f"The largest number is {max_number}")
 
 
