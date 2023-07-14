@@ -1,10 +1,10 @@
-#main method
+# main method
 def main():
-    #stores user's name in the variable 
-    name = (input("What is your name? "))
+    # stores user's name in the variable 
+    name = input("What is your name? ")
     new_name = name.replace(" ", "")
     # validates if user inputted strings as name or something else
-    if((new_name.isalpha() == False) or (new_name.isnumeric() == True)):
+    if ((new_name.isalpha() is False) or (new_name.isnumeric() is True)):
         print("Sorry, the name cannot have any numbers present, Try again")
     else:
         print("Howdy!, " + name + ", Welcome to the Python World")
