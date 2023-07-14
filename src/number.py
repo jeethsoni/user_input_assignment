@@ -2,7 +2,7 @@ import re
 
 
 def main():
-    numbers = input("Enter 5 numbers of your choice: with(,) ").split(",")
+    numbers = input("Enter 5 numbers of your choice with(,): ").split(",")
     if (len(numbers) < 5 or len(numbers) > 5):
         print("sorry, you entered more or less than 5 numbers")
     else:
@@ -18,11 +18,11 @@ def main():
             # checks for the minimum number and prints it
 
             min_number = min(num)
-            print(f"The lowest number is {min_number}")
+            print(f"\nThe lowest number is {min_number}")
 
             # checks for the maximum number and prints it
             max_number = max(num) 
-            print(f"\nThe largest number is {max_number}")
+            print(f"The largest number is {max_number}")
 
 
 if __name__ == "__main__":

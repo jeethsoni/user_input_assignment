@@ -1,6 +1,6 @@
 # main method
 def main():
-    # stores user's name in the variable 
+    # stores user's name in the variable
     name = input("What is your name? ")
     new_name = name.replace(" ", "")
     # validates if user inputted strings as name or something else
