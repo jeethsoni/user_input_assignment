@@ -18,19 +18,18 @@ def main():
                 print(f"invalid input: {new_num}")
                 exit(0)
 
-        if (new_num.isnumeric() is True):
-            conver_number = list(map(int, numbers))
-            for num in conver_number:
-                if (num % 2 == 0):
-                    even.append(num)
-                    even.sort()
-                else:
-                    odd.append(num)
-                    odd.sort()
+        conver_number = list(map(int, numbers))
+        for num in conver_number:
+            if (num % 2 == 0):
+                even.append(num)
+                even.sort()
+            else:
+                odd.append(num)
+                odd.sort()
 
-            print("")
-            print(f"Here are your odd numbers: {odd}")
-            print(f"Here are your even numbers: {even}")
+        print("")
+        print(f"Here are your odd numbers: {odd}")
+        print(f"Here are your even numbers: {even}")
 
 
 if __name__ == "__main__":

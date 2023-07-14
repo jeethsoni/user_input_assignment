@@ -12,17 +12,17 @@ def main():
                 print("Whoops, one or more string you entered is not number")
                 print(f"invalid input: {clean_num}")
                 exit(0)
-        if (clean_num.isnumeric() is True):
-            num = list(map(int, numbers))
-            print(num)
-            # checks for the minimum number and prints it
+        # if (clean_num.isnumeric() is True):
+        num = list(map(int, numbers))
+        print(num)
+        # checks for the minimum number and prints it
 
-            min_number = min(num)
-            print(f"\nThe lowest number is {min_number}")
+        min_number = min(num)
+        print(f"\nThe lowest number is {min_number}")
 
-            # checks for the maximum number and prints it
-            max_number = max(num)
-            print(f"The largest number is {max_number}")
+        # checks for the maximum number and prints it
+        max_number = max(num)
+        print(f"The largest number is {max_number}")
 
 
 if __name__ == "__main__":
