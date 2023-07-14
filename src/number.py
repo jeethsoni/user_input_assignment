@@ -12,9 +12,8 @@ def main():
                 print("Whoops, one or more string you entered is not number")
                 print(f"invalid input: {clean_num}")
                 exit(0)
-        # if (clean_num.isnumeric() is True):
+
         num = list(map(int, numbers))
-        print(num)
         # checks for the minimum number and prints it
 
         min_number = min(num)
