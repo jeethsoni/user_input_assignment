@@ -3,9 +3,7 @@ import re
 
 def main():
     numbers = input("Enter 5 numbers of your choice with(,): ").split(",")
-    if (len(numbers) < 5 or len(numbers) > 5):
-        print("sorry, you entered more or less than 5 numbers")
-    else:
+    if (len(numbers) == 5):
         for n in numbers:
             clean_num = re.sub(r"\s+", "", n)
             if (clean_num.isnumeric() is False):
@@ -22,6 +20,9 @@ def main():
         # checks for the maximum number and prints it
         max_number = max(num)
         print(f"The largest number is {max_number}")
+
+    else:
+        print("sorry, you entered more or less than 5 numbers")
 
 
 if __name__ == "__main__":
