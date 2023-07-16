@@ -8,12 +8,12 @@ import re
 
 def main():
 
-    # takes 5 numbers input from the useer 
+    # takes 5 numbers input from the user
     numbers = input("Enter 5 numbers of your choice with(,): ").split(",")
 
     # if and else statement
     if (len(numbers) == 5):
-        for n in numbers: 
+        for n in numbers:
             clean_num = re.sub(r"\s+", "", n)  # removes white space that user enter # noqa: E501
             if (clean_num.isnumeric() is False):
                 print("Whoops, one or more string you entered is not number")

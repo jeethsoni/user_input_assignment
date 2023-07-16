@@ -31,7 +31,7 @@ def main():
         # algorithm to check for even number
         for num in conver_number:
             if (num % 2 == 0):
-                even.append(num) 
+                even.append(num)
             else:
                 odd.append(num)
 
