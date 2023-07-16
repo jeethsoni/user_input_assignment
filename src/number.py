@@ -1,3 +1,8 @@
+"""
+A python script that takes 5 numbers from user and print largest and lowest.
+
+@usage python3 number.py "1,2,3,4,5"
+"""
 import re
 
 

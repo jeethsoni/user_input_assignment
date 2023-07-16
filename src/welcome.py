@@ -1,3 +1,10 @@
+"""
+A python script that takes users name and print welcome message.
+
+@usage python3 welcome.py "Jeet"
+"""
+
+
 # main method
 def main():
     # stores user's name in the variable

@@ -1,3 +1,10 @@
+"""
+A python script that takes range from user and prints random number
+
+@usage python3 random_number.py "1" to "1000"
+"""
+
+
 # importing random module
 import random
 

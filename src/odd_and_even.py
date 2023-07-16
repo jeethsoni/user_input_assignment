@@ -1,3 +1,8 @@
+"""
+A python script that takes 10 numbers from user and print odd and even list
+
+@usage python3 odd_and_even.py "1,2,3,4,5,6,7,8,9,10"
+"""
 import re
 
 
