@@ -7,18 +7,21 @@ import re
 
 
 def main():
+
+    # takes 5 numbers input from the useer 
     numbers = input("Enter 5 numbers of your choice with(,): ").split(",")
+
+    # if and else statement
     if (len(numbers) == 5):
-        for n in numbers:
-            clean_num = re.sub(r"\s+", "", n)
+        for n in numbers: 
+            clean_num = re.sub(r"\s+", "", n)  # removes white space that user enter # noqa: E501
             if (clean_num.isnumeric() is False):
                 print("Whoops, one or more string you entered is not number")
                 print(f"invalid input: {clean_num}")
                 exit(0)
 
-        num = list(map(int, numbers))
+        num = list(map(int, numbers))  # converts string to integer
         # checks for the minimum number and prints it
-
         min_number = min(num)
         print(f"\nThe lowest number is {min_number}")
 
