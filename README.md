@@ -38,7 +38,7 @@ I wanted to make this solid so if user enters less or more than 5 numbers the pr
 
 I also used regular expression from re module to strip any whitespace so the numbers are organized and it doesn't throw any errors. I then used map() function to convert the numbers from string to integer. Then it will print the lowest and largest number.
 
-### **4) Write a python script to ask the user to enter 10 numbers. Print and output with even and odd numbers in separate lists.
+### **4) Write a python script to ask the user to enter 10 numbers. Print and output with even and odd numbers in separate lists.**
 
 Wanna know your odds and evens? Well, you have come to the right place. I made a little math project that takes 10 numbers and print out odd and even list. 
 
