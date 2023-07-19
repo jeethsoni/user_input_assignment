@@ -7,6 +7,7 @@ A python script that takes range from user and prints random number
 
 # importing random module
 import random
+import sys
 
 
 def main():
@@ -14,11 +15,10 @@ def main():
     start_range = input("Enter a starting range: ")
     end_range = input("Enter an ending range: ")
 
-    if (int(end_range) < int(start_range)):
-        print("End range cannot be less than starting range")
-        exit(0)
+    if int(end_range) < int(start_range):
+        sys.exit("End range cannot be less than starting range")
 
-    if ((start_range.isdigit() is True) and (end_range.isdigit() is True)):
+    if (start_range.isdigit() is True and end_range.isdigit() is True):
         start_number = int(start_range)
         end_number = int(end_range)
         # stores random number in the variable as per users choice

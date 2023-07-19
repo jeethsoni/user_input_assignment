@@ -4,6 +4,7 @@ A python script that takes 10 numbers from user and print odd and even list
 @usage python3 odd_and_even.py "1,2,3,4,5,6,7,8,9,10"
 """
 import re
+import sys
 
 
 def main():
@@ -17,20 +18,19 @@ def main():
     len_num = len(numbers)
 
     # if and else statement
-    if (len_num == 10):
+    if len_num == 10:
         for n in numbers:
             new_num = re.sub(r"\s+", "", n)  # removes whitespace from the list
 
             # if user enters anything other than numbers exit the program
-            if (new_num.isnumeric() is False):
+            if new_num.isnumeric() is False:
                 print("Oops, you didn't enter a number")
-                print(f"invalid input: {new_num}")
-                exit(0)
+                sys.exit(f"invalid input: {new_num}")
 
         conver_number = list(map(int, numbers))  # converts 10 string to integer # noqa: E501
         # algorithm to check for even number
         for num in conver_number:
-            if (num % 2 == 0):
+            if num % 2 == 0:
                 even.append(num)
             else:
                 odd.append(num)
