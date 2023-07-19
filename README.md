@@ -4,6 +4,7 @@
 *Date: 07/13/2023*
 
 ---
+[![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen)](https://github.com/pylint-dev/pylint)
 
 ### **1) Write a python script to ask a user their name and display the name with a welcome message. You must validate input values.**
 
